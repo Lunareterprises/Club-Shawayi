@@ -34,8 +34,16 @@ function OfferList() {
     ];
 
     return (
-        <div className="relative py-12 px-18 ">
+        <div className="relative py-5 px-18 ">
+
             <div className="py-12 px-64 text-center ">
+                 <Image
+                    src="/Images/Home/Group23.png"
+                    className="absolute  bottom-0 left-40  w-20 md:w-52 opacity-50"
+                    alt="vector4"
+                    width={100}
+                    height={100}
+                  />
                 <h2 className="text-xl font-bold text-gray-100">Combo Offers: Delight in Every Bite</h2>
                 <p className="text-gray-300 mt-2">Savor the magic of C Club Shawayi’s specially crafted combo offers</p>
 

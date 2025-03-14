@@ -7,19 +7,19 @@ function HomeAboutUs() {
     <div className="relative py-12 px-6">
       {/* Background Vector Images */}
       <Image
-        src="/Images/Home/Group22.png"
-        className="absolute bottom-0 right-20 md:right-80 w-20 md:w-42 opacity-50"
+        src="/Images/Home/Group23.png"
+        className="absolute bottom-0 right-20 md:right-80 w-20 md:w-52 opacity-50"
         alt="vector4"
         width={100}
         height={100}
       />
-      <Image
+      {/* <Image
         src="/Images/Home/Group2.png"
         className="absolute bottom-0 right-125 w-16 md:w-32 opacity-40"
         alt="vector4"
         width={100}
         height={100}
-      />
+      /> */}
       <Image
         src="/Images/Home/Group1.png"
         className="absolute bottom-0 left-20 md:left-80 w-20 md:w-28 opacity-50"
@@ -34,13 +34,14 @@ function HomeAboutUs() {
         width={100}
         height={100}
       />
-        <Image
-            src="/Images/Home/Group3.png"
-            className="absolute top-0 left-[-30px]  md:left-[-50px] w-[400px] md:w-[750px] opacity-60 z-10"
-            alt="vector3"
-            width={350}
-            height={350}
-          />
+<Image
+  src="/Images/Home/Group31.png"
+  className="absolute top-0 left-[-30px] md:left-[-50px] w-[400px] md:w-[750px] opacity-60 z-10 -scale-x-100"
+  alt="vector3"
+  width={550}
+  height={350}
+/>
+
 
       <div className="flex flex-col md:flex-row justify-center items-center gap-8 my-28 relative">
         <div className="relative">

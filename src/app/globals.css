@@ -24,3 +24,12 @@ body {
   color: var(--foreground);
   font-family: "Montserrat", sans-serif;;
 }
+.slick-dots li button:before {
+  color: white !important; 
+  font-size: 8px !important;
+  opacity: 1 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: red !important; 
+}

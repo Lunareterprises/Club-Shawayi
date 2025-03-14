@@ -2,7 +2,7 @@
 import React, { useState }  from 'react';
 import Image from 'next/image';
 
-import { FaCaretDown, FaBars, FaTimes } from 'react-icons/fa';
+import {  FaBars, FaTimes } from 'react-icons/fa';
 
 const MENU_ITEMS = [
   { id: 1, name: 'Home', link: '/'} ,
@@ -17,10 +17,9 @@ const MENU_ITEMS = [
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
   return (
     <header className="shadow-none bg-white z-40 relative">
-      <div className="bg-[#D42D21] px-10 py-5 ">
+      <div className="bg-[#D42D21] px-10 lg:px-30 py-5 ">
         <div className="container flex justify-between items-center gap-10 sm:gap-3">
           <a href="#" className="font-bold text-2xl sm:text-3xl text-gray-600">
             <Image src="/Images/Home/logo.png" alt="Logo" width={223.51} height={45}  />
@@ -37,7 +36,7 @@ const Header = () => {
           </button>
 
           <nav className="hidden sm:flex">
-            <ul className="flex items-center gap-6">
+            <ul className="flex items-center gap-24">
               {MENU_ITEMS.map((item) => (
                 <li key={item.id}>
                   <a href={item.link} className="text-white hover:text-yellow-800 transition">
