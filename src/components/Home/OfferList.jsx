@@ -36,11 +36,11 @@ function OfferList() {
     return (
         <div className="relative py-12 px-18 ">
             <div className="py-12 px-64 text-center ">
-                <h2 className="text-3xl font-bold text-[#D42D21]">Special Offers</h2>
-                <p className="text-gray-500 mt-2">Check out our exclusive deals just for you!</p>
+                <h2 className="text-xl font-bold text-gray-100">Combo Offers: Delight in Every Bite</h2>
+                <p className="text-gray-300 mt-2">Savor the magic of C Club Shawayi’s specially crafted combo offers</p>
 
                 <div>
-                    <div className="grid grid-cols-3 justify-center mt-8 gap-24 ">
+                    <div className="grid grid-cols-3 justify-center mt-12 gap-24 ">
                         {products.map((product) => (
                             <div key={product.id} className="border border-gray-100 shadow-lg p-4 ">
                                 <div className='flex justify-between'>
