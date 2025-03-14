@@ -27,18 +27,18 @@ const Footer = () => (
               <img src="/Images/Home/FooterLogo.png" alt="Logo" className="w-56" />
             </a>
           </h2>
-          <p className="text-gray-300 text-sm w-1/2">
+          <p className="text-gray-300 text-sm w-full md:w-1/2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Learn more
           </p>
           <h1 className='font-semibold mt-6'>OPENING HOURS</h1>
-          <div className='mt-6 grid grid-cols-3 gap-4 text-sm'>
+          <div className='mt-6 grid grid-col-1 md:grid-cols-3 gap-4 text-sm'>
             <p className="text-gray-300 flex flex-col"><span>Monday - Friday</span> <span>8:00 AM to 9:00 PM</span> </p>
             <p className="text-gray-300 flex flex-col"><span>Saturday</span> <span>8:00 AM to 9:00 PM</span> </p>
             <p className="text-gray-300 flex flex-col"><span>Sunday</span> <span>CLOSED</span> </p>
           </div>
         {/* </div> */}
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
         {/* Logo and About Section */}
         
 
@@ -77,23 +77,6 @@ const Footer = () => (
               ))}
           </div>
         </div>
-
-
-        {/* Contact Info & Social Media */}
-        {/* <div className="py-4 px-4 flex flex-col justify-between ">
-          
-          <div className="flex flex-col space-x-4 mb-4">
-          <h1 className="text-xl font-bold mb-3">FOLLOW US</h1>
-            <div className="flex flex-row space-y-4">
-              {[FaTwitter, FaFacebookF, FaGooglePlusG].map((Icon, index) => (
-                <a key={index} href="#" aria-label={Icon.name} className="text-3xl hover:text-primary">
-                  <Icon />
-                </a>
-              ))}
-            </div>
-          </div>
-          
-        </div> */}
       </div>
     </div>
   </footer>
