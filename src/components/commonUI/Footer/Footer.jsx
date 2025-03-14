@@ -19,9 +19,8 @@ const footerLinksDishes = [
 
 const Footer = () => (
   <footer className="text-white mt-28 w-full py-10">
-    <div className=" mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
+    <div className=" mx-auto px-4 lg:px-32 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
       <div className="flex flex-col ">
-        {/* <div className="py-4 px-4 w-full bg-green-500 "> */}
           <h2 className="text-2xl font-bold mb-3">
             <a href="#">
               <img src="/Images/Home/FooterLogo.png" alt="Logo" className="w-56" />
@@ -36,13 +35,9 @@ const Footer = () => (
             <p className="text-gray-300 flex flex-col"><span>Saturday</span> <span>8:00 AM to 9:00 PM</span> </p>
             <p className="text-gray-300 flex flex-col"><span>Sunday</span> <span>CLOSED</span> </p>
           </div>
-        {/* </div> */}
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
-        {/* Logo and About Section */}
-        
-
-        {/* Important Links */}
+      
         <div className="py-4 px-4 ">
           <h1 className="text-md font-semibold mb-3">NAVIGATION</h1>
           <ul className="flex flex-col gap-3">
@@ -54,7 +49,6 @@ const Footer = () => (
           </ul>
         </div>
 
-        {/* Additional Links */}
         <div className="py-4 px-4 ">
           <h1 className="text-md font-semibold mb-3">DISHES</h1>
           <ul className="flex flex-col gap-3">
