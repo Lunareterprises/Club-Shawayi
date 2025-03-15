@@ -13,25 +13,38 @@ const ImageAnimation = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className="flex flex-row justify-center items-center w-full h-auto md:h-96 overflow-hidden">
+    <div className="flex flex-row md:flex-row justify-center items-center w-full h-auto md:h-96 overflow-hidden">
       {images.map((src, index) => (
-        <motion.img
+        <motion.div
           key={index}
-          src={src}
-          className="object-cover transition-all"
+          className="relative flex-grow transition-all overflow-hidden"
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
           animate={{
-            width: hoveredIndex === null ? "100%" : hoveredIndex === index ? "80%" : "20%",
+            flexGrow: hoveredIndex === null ? 1 : hoveredIndex === index ? 3 : 0.5, 
           }}
-          initial={{ width: "100%" }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
           style={{
-            height: "auto", 
-            maxHeight: "100%", 
-            flexGrow: 1, 
+            height: "100%", // Ensures the parent div maintains height
+            minHeight: "12rem", // Prevents collapsing on smaller screens
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
-        />
+        >
+          <motion.img
+            src={src}
+            className="object-cover transition-all w-full h-48 md:h-full"
+            animate={{
+              scale: hoveredIndex === index ? 1.5 : 1, 
+            }}
+            initial={{ scale: 1 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            style={{
+              objectFit: "cover",
+            }}
+          />
+        </motion.div>
       ))}
     </div>
   );
