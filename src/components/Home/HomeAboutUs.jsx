@@ -21,9 +21,9 @@ function HomeAboutUs() {
       />
       <Image
         src="/Images/Home/Group31.png"
-        className="absolute top-0 left-[-20px] sm:left-[-30px] md:left-[-50px] w-[300px] sm:w-[500px]   "
+        className="absolute top-0 left-[-20px] sm:left-[-30px] md:left-[-50px] w-[300px] sm:w-[450px]   "
         alt="vector3"
-        width={550}
+        width={650}
         height={350}
       />
 
