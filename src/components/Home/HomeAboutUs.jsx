@@ -5,31 +5,23 @@ import { FaArrowRight } from "react-icons/fa";
 function HomeAboutUs() {
   return (
     <div className="relative py-12 px-4 sm:px-6 lg:px-12">
-      {/* Background Vector Images */}
       <Image
         src="/Images/Home/Group23.png"
-        className="absolute bottom-0 right-5 md:right-20 lg:right-40 w-14 sm:w-20 md:w-52 opacity-50"
+        className="absolute  bottom-0 right-5  md:right-20 lg:right-10 xl:right-80 w-48  md:w-56 lg:w-68 xl:w-96 "
         alt="vector4"
-        width={100}
+        width={350}
         height={100}
       />
       <Image
-        src="/Images/Home/Group1.png"
-        className="absolute bottom-0 left-5 sm:left-16 md:left-32 lg:left-52 w-14 sm:w-20 md:w-28 opacity-50"
+        src="/Images/Home/Group2.png"
+        className="absolute bottom-0 left-5 sm:left-16 md:left-32 lg:left-10 xl:left-42 w-14 sm:w-24 "
         alt="vector1"
         width={100}
         height={100}
       />
       <Image
-        src="/Images/Home/Group12.png"
-        className="absolute bottom-0 left-2 md:left-10 lg:left-20 w-12 sm:w-16 md:w-20 opacity-60"
-        alt="vector2"
-        width={100}
-        height={100}
-      />
-      <Image
         src="/Images/Home/Group31.png"
-        className="absolute top-0 left-[-20px] sm:left-[-30px] md:left-[-50px] w-[300px] sm:w-[400px] md:w-[750px] opacity-60 z-10 -scale-x-100"
+        className="absolute top-0 left-[-20px] sm:left-[-30px] md:left-[-50px] w-[300px] sm:w-[500px]   "
         alt="vector3"
         width={550}
         height={350}
@@ -50,14 +42,13 @@ function HomeAboutUs() {
           <Image
             src="/Images/Home/dishAbout.png"
             alt="Our Mission"
-            className="absolute bottom-[-50px] left-[50%] lg:left-[90%] transform -translate-x-1/2 w-24 sm:w-28 md:w-40 lg:w-56 rounded-lg shadow-lg"
+            className="absolute bottom-[-50px] lg:bottom-[-140px] left-[50%] lg:left-[100%] transform -translate-x-1/2 w-24 sm:w-28 md:w-40 lg:w-68 rounded-lg shadow-lg"
             width={100}
             height={100}
           />
         </div>
 
-        {/* Text Section */}
-        <div className="max-w-full md:w-[510px] text-center md:text-left px-4 sm:px-6">
+        <div className="max-w-full md:w-[510px] text-center md:text-left px-4 sm:px-6 mt-6 lg:mt-0">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 text-[#D42D21]">
             About Us
           </h2>

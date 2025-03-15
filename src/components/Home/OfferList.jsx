@@ -59,8 +59,8 @@ function OfferList() {
       {/* Heading Section */}
       <div className="py-8 text-center">
         <Image
-          src="/Images/Home/Group23.png"
-          className="absolute bottom-0 left-10 sm:left-20 md:left-20 w-16 sm:w-32 md:w-52 opacity-50"
+          src="/Images/Home/Group18.png"
+          className="absolute bottom-0 left-10 sm:left-20 md:left-10 lg:left-20 w-16 sm:w-32 md:w-52 "
           alt="vector4"
           width={100}
           height={100}
