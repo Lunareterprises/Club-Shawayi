@@ -1,3 +1,4 @@
+import ExcitingNews from '@/components/Franchise/ExcitingNews'
 import Founder from '@/components/Franchise/Founder'
 import FranchiseHero from '@/components/Franchise/FranchiseHero'
 import React from 'react'
@@ -7,6 +8,7 @@ function page() {
     <>
       <FranchiseHero />
       <Founder />
+      <ExcitingNews />
     </>
     
   )

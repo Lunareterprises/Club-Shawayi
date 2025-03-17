@@ -22,6 +22,7 @@ function FranchiseHero() {
       </p>
       <div className="mt-12">
         <Image src="/Images/Franchise/Component.png" alt="arrow" className="border border-[#D42D21] rounded-full p-4 " width={50} height={100}/>
+
       </div>
     </div>
   );

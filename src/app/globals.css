@@ -46,3 +46,21 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 .slick-dots li.slick-active button:before {
   color: red !important; 
 }
+
+@font-face {
+  font-family: "Pecita";
+  src: url("/fonts/Pecita.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-variant-ligatures: discretionary-ligatures;
+  font-feature-settings: "liga", "dlig"; /* Enable OpenType features */
+}
+
+.pecita-style {
+  font-family: "Pecita", cursive;
+  font-size: 2rem;
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility; /* Improves text clarity */
+}
+
