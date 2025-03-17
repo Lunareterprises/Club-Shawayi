@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: black;
     --foreground: #ededed;
   }
 }
@@ -24,6 +24,18 @@ body {
   color: var(--foreground);
   font-family: "Montserrat", sans-serif;;
 }
+
+
+html, body {
+  overflow: auto;
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;
+}
+
 .slick-dots li button:before {
   color: white !important; 
   font-size: 8px !important;

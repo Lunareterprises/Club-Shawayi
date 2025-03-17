@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@fontsource/montserrat": "^5.2.5",
+    "@next/font": "^14.2.15",
     "@tailwindcss/postcss": "^4.0.13",
+    "autoprefixer": "^10.4.21",
     "framer-motion": "^12.5.0",
     "next": "15.2.2",
     "postcss": "^8.5.3",
@@ -20,7 +22,7 @@
     "react-icons": "^5.5.0",
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1",
-    "tailwindcss": "^4.0.13"
+    "tailwindcss": "^4.0.14"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
