@@ -4,25 +4,26 @@
 @import '@fontsource/montserrat/200.css'; 
 @import '@fontsource/montserrat/700.css'; 
 
-
+/* 
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --font-sans: "Inter", sans-serif;
   --font-mono: monospace;
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: black;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
-  background-color: var(--background);
-  color: var(--foreground);
-  font-family: "Montserrat", sans-serif;;
+  background-color: black;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+
 }
 
 
