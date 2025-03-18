@@ -23,7 +23,7 @@ const Header = () => {
         isFranchisePage ? "bg-[#000000]" : "bg-white"
       }`}
     >
-      <div className={`${isFranchisePage ? "bg-transparent" : "bg-[#D42D21]"} px-10 lg:px-30 py-5`}>
+      <div className={`${isFranchisePage ? "bg-transparent" : "bg-[#D42D21]"} px-10 lg:px-32  py-5`}>
         <div className="container flex justify-between items-center gap-10 sm:gap-3">
           <a href="#" className="font-bold text-2xl sm:text-3xl text-gray-600">
             <Image src="/Images/Home/logo.png" alt="Logo" width={223.51} height={45} />
@@ -37,7 +37,7 @@ const Header = () => {
           </button>
 
           <nav className="hidden sm:flex">
-            <ul className="flex items-center gap-24">
+            <ul className="flex items-center md:gap-8 lg:gap-16 xl:gap-28">
               {MENU_ITEMS.map((item) => (
                 <li key={item.id}>
                   <a href={item.link} className="text-white hover:text-yellow-800 transition">
