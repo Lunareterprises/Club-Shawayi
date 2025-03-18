@@ -28,7 +28,7 @@ body {
 
 
 html, body {
-  overflow: auto;
+  overflow-x: hidden;
   -ms-overflow-style: none; 
   scrollbar-width: none; 
 }
@@ -46,3 +46,67 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 .slick-dots li.slick-active button:before {
   color: red !important; 
 }
+
+@font-face {
+  font-family: "Pecita";
+  src: url("/fonts/Pecita.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-variant-ligatures: discretionary-ligatures;
+  font-feature-settings: "liga", "dlig"; /* Enable OpenType features */
+}
+
+.pecita-style {
+  font-family: "Pecita", cursive;
+  font-size: 2rem;
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility; /* Improves text clarity */
+}
+
+.rhombus-image {
+  transform: rotate(90deg);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+
+
+
+
+
+@keyframes blink-move {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.4;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-blink-move {
+  animation: blink-move 1s infinite ease-in-out;
+}
+
+@keyframes blink-glow {
+  0% {
+    box-shadow: 0 0 5px 0px #D42D21;
+  }
+  50% {
+    box-shadow: 0 0 35px 0px #e93c30;
+  }
+  100% {
+    box-shadow: 0 0 10px 0px #D42D21;
+  }
+}
+
+.animate-blink-move-circle {
+  animation: blink-glow 1s infinite ease-in-out;
+}
+
+
