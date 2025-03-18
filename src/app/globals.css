@@ -28,7 +28,7 @@ body {
 
 
 html, body {
-  overflow: auto;
+  overflow-x: hidden;
   -ms-overflow-style: none; 
   scrollbar-width: none; 
 }
@@ -64,3 +64,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   text-rendering: optimizeLegibility; /* Improves text clarity */
 }
 
+.rhombus-image {
+  transform: rotate(90deg);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
