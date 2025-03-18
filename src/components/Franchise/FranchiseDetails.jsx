@@ -4,19 +4,18 @@ import React from 'react'
 function FranchiseDetails() {
   return (
     <div 
-      className="flex flex-row items-center justify-between mt-6   gap-12"
+      className="flex flex-col lg:flex-row items-center justify-between mt-6 px-6 md:px-20 lg:px-0  gap-12"
       style={{
         background: "radial-gradient(104.11% 100.17% at 28.27% 7.59%, rgba(10, 1, 0, 0.1) 0%, rgba(255, 163, 143, 0.112) 100%)"
       }}
     >
       
-        <div className="w-1/2 ml-48">
+        <div className="w-full lg:w-1/2 lg:ml-48">
             <h1 className="text-5xl font-bold leading-snug">
             Franchise Details—Your <br /> 
             <span className="text-[#D42D21]">Gateway to Success!</span>
             </h1>
             
-            {/* Franchise Info List */}
             <div className="flex flex-col gap-6  mt-12">
             {[
                 "➢ Franchise Fee - INR. 3,00,000/- (Non-refundable)",
