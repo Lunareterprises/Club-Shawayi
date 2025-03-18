@@ -11,7 +11,7 @@ function FranchiseDetails() {
     >
       
         <div className="w-full lg:w-1/2 lg:ml-48">
-            <h1 className="text-5xl font-bold leading-snug">
+            <h1 className="text-3xl lg:text-5xl font-bold leading-snug">
             Franchise Details—Your <br /> 
             <span className="text-[#D42D21]">Gateway to Success!</span>
             </h1>
