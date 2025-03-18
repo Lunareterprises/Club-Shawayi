@@ -20,9 +20,15 @@ function FranchiseHero() {
       <p className={`text-5xl text-center mt-18 ${montez.className}`}>
         The C Club Shawayi <span className="text-[#D42D21]">Franchise</span> Opportunity
       </p>
-      <div className="mt-12">
-        <Image src="/Images/Franchise/Component.png" alt="arrow" className="border border-[#D42D21] rounded-full p-4 " width={50} height={100}/>
-
+      {/* Apply the correct class without the dot */}
+      <div className="mt-12 border border-[#D42D21] rounded-full p-4 animate-blink-move-circle">
+        <Image 
+          src="/Images/Franchise/Component.png" 
+          alt="arrow" 
+          className="animate-blink-move" 
+          width={20} 
+          height={100}
+        />
       </div>
     </div>
   );

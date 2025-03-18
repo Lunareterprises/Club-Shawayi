@@ -68,3 +68,42 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   transform: rotate(90deg);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
+
+
+
+@keyframes blink-move {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.4;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-blink-move {
+  animation: blink-move 1.5s infinite ease-in-out;
+}
+
+@keyframes blink-glow {
+  0% {
+    box-shadow: 0 0 5px 2px #D42D21;
+  }
+  50% {
+    box-shadow: 0 0 25px 2px #e93c30;
+  }
+  100% {
+    box-shadow: 0 0 5px 2px #D42D21;
+  }
+}
+
+.animate-blink-move-circle {
+  animation: blink-glow 2s infinite ease-in-out;
+}
+
+
