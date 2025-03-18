@@ -3,7 +3,7 @@ import React from 'react'
 
 function Founder() {
   return (
-    <div className="px-6 md:px-20 lg:px-40 py-12">
+    <div className="px-6 md:px-20 lg:px-48 py-12 mt-0 lg:-mt-20 ">
       <div className="flex flex-col md:flex-row justify-between items-center gap-8">
         
         {/* Left Section - Text */}
@@ -21,17 +21,17 @@ function Founder() {
           </p>
         </div>
 
-        <div className="md:w-1/2 flex flex-col items-start ">
+        <div className=" flex flex-col items-start ">
           <Image
             src="/Images/Franchise/founder.jpg"
-            width={320} 
-            height={80}  
+            width={300} 
+            height={0}  
             alt="Founder Image"
             
           />
           
           <div className="text-center md:text-left mt-4">
-            <h1 className="text-lg font-semibold" style={{ fontFamily: "Pecita, cursive" }}>
+            <h1 className="text-3xl font-medium" style={{ fontFamily: "Pecita, cursive" }}>
               Rahul Menon
             </h1>
             <p className="text-sm text-gray-400">Founder, C CLUB SHAWAYI</p>
