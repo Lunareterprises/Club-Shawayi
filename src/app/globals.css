@@ -87,23 +87,23 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 }
 
 .animate-blink-move {
-  animation: blink-move 1.5s infinite ease-in-out;
+  animation: blink-move 1s infinite ease-in-out;
 }
 
 @keyframes blink-glow {
   0% {
-    box-shadow: 0 0 5px 2px #D42D21;
+    box-shadow: 0 0 5px 0px #D42D21;
   }
   50% {
-    box-shadow: 0 0 25px 2px #e93c30;
+    box-shadow: 0 0 35px 0px #e93c30;
   }
   100% {
-    box-shadow: 0 0 5px 2px #D42D21;
+    box-shadow: 0 0 10px 0px #D42D21;
   }
 }
 
 .animate-blink-move-circle {
-  animation: blink-glow 2s infinite ease-in-out;
+  animation: blink-glow 1s infinite ease-in-out;
 }
 
 

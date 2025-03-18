@@ -9,24 +9,23 @@ const montez = Montez({
 
 function FranchiseHero() {
   return (
-    <div className="flex flex-col justify-center items-center h-screen">
-      <h1 className="font-bold text-[72px] text-center leading-22">
+    <div className="flex flex-col justify-center items-center mt-10 lg:mt-0 h-auto lg:h-screen">
+      <h1 className="font-bold text-3xl md:text-5px lg:text-7xl text-center leading-normal lg:leading-22">
         Join the <span className="text-[#D42D21]">Masala <br /> Shawayi</span> Revolution..!
       </h1>
-      <div className="flex flex-col items-center gap-2 mt-3">
-        <p className="text-xl text-center">Mon-Sun: 11 AM-11 PM</p>
-        <p className="text-xl text-center">Bangalore, India</p>
+      <div className="flex text-sm lg:text-xl flex-col items-center gap-2 mt-3">
+        <p className=" text-center">Mon-Sun: 11 AM-11 PM</p>
+        <p className=" text-center">Bangalore, India</p>
       </div>
-      <p className={`text-5xl text-center mt-18 ${montez.className}`}>
+      <p className={`text-2xl lg:text-5xl text-center mt-10 lg:mt-18 ${montez.className}`}>
         The C Club Shawayi <span className="text-[#D42D21]">Franchise</span> Opportunity
       </p>
-      {/* Apply the correct class without the dot */}
-      <div className="mt-12 border border-[#D42D21] rounded-full p-4 animate-blink-move-circle">
+      <div className="mt-12 border-2 border-[#D42D21] rounded-full p-4 animate-blink-move-circle">
         <Image 
           src="/Images/Franchise/Component.png" 
           alt="arrow" 
           className="animate-blink-move" 
-          width={20} 
+          width={15} 
           height={100}
         />
       </div>
