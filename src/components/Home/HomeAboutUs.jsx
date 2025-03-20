@@ -5,20 +5,20 @@ import { FaArrowRight } from "react-icons/fa";
 function HomeAboutUs() {
   return (
     <div className="relative py-12 px-4 sm:px-6 lg:px-12">
-      <Image
+      {/* <Image
         src="/Images/Home/Group23.png"
         className="absolute  bottom-0 right-5  md:right-20 lg:right-10 xl:right-80 w-48  md:w-56 lg:w-68 xl:w-96 "
         alt="vector4"
         width={350}
         height={100}
-      />
-      <Image
+      /> */}
+      {/* <Image
         src="/Images/Home/Group2.png"
         className="absolute bottom-0 left-5 sm:left-16 md:left-32 lg:left-10 xl:left-42 w-14 sm:w-24 "
         alt="vector1"
         width={100}
         height={100}
-      />
+      /> */}
       <Image
         src="/Images/Home/Group31.png"
         className="absolute top-0 left-[-20px] sm:left-[-30px] md:left-[-50px] w-[300px] sm:w-[450px]   "
@@ -48,7 +48,7 @@ function HomeAboutUs() {
           />
         </div>
 
-        <div className="max-w-full md:w-[510px] text-center md:text-left px-4 sm:px-6 mt-6 lg:mt-0">
+        <div className="max-w-full md:w-[510px] text-center md:text-left px-4 sm:px-6 mt-6 lg:mt-0 bg-black">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 text-[#D42D21]">
             About Us
           </h2>
