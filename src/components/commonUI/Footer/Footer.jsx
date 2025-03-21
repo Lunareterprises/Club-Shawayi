@@ -26,8 +26,8 @@ const Footer = () => (
               <img src="/Images/Home/logo.png" alt="Logo" className="w-56" />
             </a>
           </h2>
-          <p className="text-gray-300 text-sm w-full md:w-1/2">
-          C Club Shawayi, a proud venture of Red Crown International, brings you the finest flavors of shawayi, crafted with passion and authenticity. As part of the Red crown family, we are committed to delivering excellence in taste and service, ensuring every meal is a delightful experience.
+          <p className="text-gray-300 text-sm w-full md:w-3/4">
+          <span className='text-[#D42D21] font-semibold'>C Club Shawayi,</span> a proud venture of <span className='text-[#D42D21] font-semibold'>Red Crown International,  </span>  brings you the finest flavors of shawayi, crafted with passion and authenticity. As part of the Red crown family, we are committed to delivering excellence in taste and service, ensuring every meal is a delightful experience.
           </p>
           <h1 className='font-semibold mt-6'>OPENING HOURS</h1>
           <div className='mt-6 grid grid-col-1 md:grid-cols-3 gap-4 text-sm'>
