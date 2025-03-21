@@ -40,7 +40,7 @@ const Header = () => {
             <ul className="flex items-center md:gap-8 lg:gap-16 xl:gap-28">
               {MENU_ITEMS.map((item) => (
                 <li key={item.id}>
-                  <a href={item.link} className="text-white hover:text-yellow-800 transition">
+                  <a href={item.link} className="text-white hover:font-semibold transition">
                     {item.name}
                   </a>
                 </li>
@@ -55,7 +55,7 @@ const Header = () => {
           <ul className="flex flex-col gap-4 text-black">
             {MENU_ITEMS.map((item) => (
               <li key={item.id}>
-                <a href={item.link} className="block p-2 hover:text-yellow-800 rounded">
+                <a href={item.link} className="block p-2 hover:font-semibold rounded">
                   {item.name}
                 </a>
               </li>

@@ -75,7 +75,7 @@ function OfferList() {
         {/* First Grid Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-24 mt-8">
           {products.map((product) => (
-            <div key={product.id} className="border border-gray-100 shadow-lg p-4 rounded-lg">
+            <div key={product.id} className="border border-gray-100 shadow-lg p-4 rounded-lg bg-black">
               <div className="flex justify-between text-xs">
                 <div className="border px-2 py-1">{product.person}</div>
                 <div
@@ -91,7 +91,7 @@ function OfferList() {
               <Image
                 src={product.img}
                 alt={product.name[0]}
-                className="w-24 h-24 rounded-full mx-auto mt-4 object-contain"
+                className="w-24 h-24 rounded-full mx-auto mt-4 object-cover"
                 width={100}
                 height={100}
               />
@@ -112,11 +112,11 @@ function OfferList() {
         {/* Second Grid Section */}
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-24">
           {products2.map((product) => (
-            <div key={product.id} className="border border-gray-100 shadow-lg p-4 rounded-lg">
+            <div key={product.id} className="border border-gray-100 shadow-lg p-4 rounded-lg bg-black">
               <Image
                 src={product.img}
                 alt={product.name}
-                className="w-24 h-24 mx-auto mt-4 object-contain"
+                className="w-24 h-24 rounded-full mx-auto mt-4 object-cover"
                 width={100}
                 height={100}
               />
