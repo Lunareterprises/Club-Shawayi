@@ -1,6 +1,4 @@
-import Footer from "@/components/commonUI/Footer/Footer";
 import "./globals.css";
-import Header from "@/components/commonUI/Header/Header";
 
 export const metadata = {
   title: "Club Shawayi",
@@ -16,9 +14,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="antialiased">
-        <Header />
+        
         <main>{children}</main>
-        <Footer />
       </body>
     </html>
   );

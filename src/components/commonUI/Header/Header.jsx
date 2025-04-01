@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaEnvelope, FaPhoneSquare, FaTwitter, FaFacebook,FaInstagram, FaYoutube } from "react-icons/fa";
 
 const MENU_ITEMS = [
   { id: 1, name: "Home", link: "/" },
@@ -18,16 +18,30 @@ const Header = () => {
   const isFranchisePage = pathname === "/Franchise";
 
   return (
-    <header
-      className={`z-40 relative transition-all duration-300 ${
-        isFranchisePage ? "bg-[#000000]" : "bg-white"
-      }`}
+    <header 
+    className="absolute top-0 left-0 w-full z-10"
+      // className={`z-40 relative transition-all duration-300 ${
+      //   isFranchisePage ? "bg-transparent" : "bg-transparent"
+      // }`}
     >
-      <div className={`${isFranchisePage ? "bg-transparent" : "bg-[#D42D21]"} px-10 lg:px-32  py-5`}>
-        <div className="container flex justify-between items-center gap-10 sm:gap-3">
-          <a href="#" className="font-bold text-2xl sm:text-3xl text-gray-600">
+      <div className=" bg-transparent px-10 lg:px-32  py-5" >
+        <div className="flex justify-between gap-3 mb-6 ">
+          <div className="flex gap-3 text-sm">
+            <p className=" flex items-center gap-2"><FaPhoneSquare />+1 0000000000  </p>
+            <p className=" flex items-center gap-2"><FaEnvelope />cclubshawayi.1221@.com </p>
+          </div>
+          <div className="flex gap-12 items-center text-xl">
+            <FaFacebook /> 
+            <FaTwitter />
+            <FaInstagram />
+            <FaYoutube />
+          </div>
+        </div>
+
+        <div className="container flex justify-end items-center gap-10 sm:gap-3 ">
+          {/* <a href="#" className="font-bold text-2xl sm:text-3xl text-gray-600">
             <Image src="/Images/Home/logo.png" alt="Logo" width={223.51} height={45} />
-          </a>
+          </a> */}
 
           <button
             className="text-white text-2xl sm:hidden"

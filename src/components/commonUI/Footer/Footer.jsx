@@ -18,7 +18,7 @@ const footerLinksDishes = [
 ];
 
 const Footer = () => (
-  <footer className="text-white mt-28 w-full py-10">
+  <footer className="text-white mt-28 w-full py-10 bg-[#222222]">
     <div className=" mx-auto px-4 lg:px-32 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
       <div className="flex flex-col ">
           <h2 className="text-2xl font-bold mb-3">

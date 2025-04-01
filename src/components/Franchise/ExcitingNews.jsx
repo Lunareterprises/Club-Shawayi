@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from '../commonUI/Buttons/Button'
 
 function ExcitingNews() {
   return (
