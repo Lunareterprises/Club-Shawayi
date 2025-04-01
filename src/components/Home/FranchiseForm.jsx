@@ -34,7 +34,7 @@ const FranchiseForm = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen text-[#1F1F1F] w-3xl">
+    <div className="flex justify-center items-center min-h-screen text-[#1F1F1F] w-full lg:w-3xl mb-10 lg:mb-0">
       <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-lg">
         <h2 className="text-2xl font-semibold mb-4">Get Franchise</h2>
         <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
@@ -83,7 +83,7 @@ const FranchiseForm = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+                className="w-full bg-[#D42D21] text-white py-2 rounded hover:bg-[#d42d21f5]"
               >
                 Submit & Get Franchise
               </button>

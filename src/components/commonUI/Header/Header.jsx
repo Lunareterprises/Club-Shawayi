@@ -25,10 +25,10 @@ const Header = () => {
       // }`}
     >
       <div className=" bg-transparent px-10 lg:px-32  py-5" >
-        <div className="flex justify-between gap-3 mb-6 ">
-          <div className="flex gap-3 text-sm">
-            <p className=" flex items-center gap-2"><FaPhoneSquare />+1 0000000000  </p>
-            <p className=" flex items-center gap-2"><FaEnvelope />cclubshawayi.1221@.com </p>
+        <div className="flex flex-col-reverse md:flex-row justify-center md:justify-between gap-3 mb-6 ">
+          <div className="flex flex-col md:flex-row gap-3 text-sm">
+            <p className=" flex   items-center gap-2"><FaPhoneSquare />+1 0000000000  </p>
+            <p className=" flex  items-center gap-2"><FaEnvelope />cclubshawayi.1221@.com </p>
           </div>
           <div className="flex gap-12 items-center text-xl">
             <FaFacebook /> 

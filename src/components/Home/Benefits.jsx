@@ -41,10 +41,10 @@ const benefitsData = [
 function Benefits() {
   return (
     <div className="bg-white text-gray-950 flex flex-col items-center justify-center py-10 px-10 lg:px-32 ">
-      <h1 className="font-bold text-4xl text-center mb-6">
+      <h1 className="font-bold text-lg md:text-2xl lg:text-4xl text-center mb-6">
         BENEFITS OF C CLUB SHAWAYI FRANCHISE
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 w-full ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full ">
         {benefitsData.map((benefit) => (
           <BenefitCard key={benefit.id} benefit={benefit} />
         ))}
@@ -66,7 +66,7 @@ const BenefitCard = ({ benefit }) => {
         className="mb-4"
         onError={() => setImgSrc("/images/placeholder.png")} // Set fallback image on error
       />
-      <p className="text-white text-center text-xl font-normal">{benefit.description}</p>
+      <p className="text-white text-center text-sm md:text-base lg:text-xl font-normal">{benefit.description}</p>
     </div>
   );
 };
