@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Thiruvananthapuram, Kerala",
+    "url": "/videos/carousel1.mp4",
+    "subTitle": "Successfully Running",
+    "img": "/Images/Outlets/person1.png",
+    "name": "Esther",
+    "rating": "5.0",
+    "phone": "(308) 555-0121"
+  },
+  {
+    "id": 2,
+    "title": "Kochi, Kerala",
+    "url": "/videos/carousel2.mp4",
+    "subTitle": "Newly Opened",
+    "img": "/Images/Outlets/person1.png",
+    "name": "Rahul",
+    "rating": "4.8",
+    "phone": "(302) 555-0199"
+  },
+  {
+    "id": 3,
+    "title": "Kozhikode, Kerala",
+    "url": "/videos/carousel1.mp4",
+    "subTitle": "Best in City",
+    "img": "/Images/Outlets/person1.png",
+    "name": "Sneha",
+    "rating": "4.9",
+    "phone": "(305) 555-0145"
+  },
+  {
+    "id": 4,
+    "title": "Bengaluru, Karnataka",
+    "url": "/videos/carousel2.mp4",
+    "subTitle": "Customer Favorite",
+    "img": "/Images/Outlets/person1.png",
+    "name": "Arjun",
+    "rating": "5.0",
+    "phone": "(310) 555-0173"
+  },
+  {
+    "id": 5,
+    "title": "Chennai, Tamil Nadu",
+    "url": "/videos/carousel1.mp4",
+    "subTitle": "Highly Rated",
+    "img": "/Images/Outlets/person1.png",
+    "name": "Divya",
+    "rating": "4.7",
+    "phone": "(315) 555-0129"
+  },
+  {
+    "id": 6,
+    "title": "Hyderabad, Telangana",
+    "url": "/videos/carousel2.mp4",
+    "subTitle": "Expanding Soon",
+    "img": "/Images/Outlets/person1.png",
+    "name": "Vikram",
+    "rating": "4.9",
+    "phone": "(318) 555-0134"
+  },
+  {
+    "id": 7,
+    "title": "Pune, Maharashtra",
+    "url": "/videos/carousel1.mp4",
+    "subTitle": "Top Performing",
+    "img": "/Images/Outlets/person1.png",
+    "name": "Meera",
+    "rating": "4.8",
+    "phone": "(325) 555-0160"
+  },
+  {
+    "id": 8,
+    "title": "Mumbai, Maharashtra",
+    "url": "/videos/carousel2.mp4",
+    "subTitle": "Popular Choice",
+    "img": "/Images/Outlets/person1.png",
+    "name": "Sanjay",
+    "rating": "5.0",
+    "phone": "(330) 555-0152"
+  }
+]

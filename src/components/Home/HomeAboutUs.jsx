@@ -55,10 +55,10 @@ function HomeAboutUs() {
           <Image
             src={imageUrl}
             alt="Image under button"
-            width={400}  // Adjust the image width
-            height={400} // Adjust the image height
-            onError={handleImageError} // Fallback in case of an error
-            className="mt-4" // Add margin top for spacing
+            width={400}  
+            height={400} 
+            onError={handleImageError} 
+            className="mt-4" 
           />
         ) : null}
       </div>

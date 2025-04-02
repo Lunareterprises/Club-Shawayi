@@ -16,7 +16,7 @@ function Hero({ overrideHeader }) {
 
         <div className="absolute inset-0 bg-black opacity-60 z-0" />
 
-        <div className="relative z-10 flex flex-col items-center text-center mt-36 lg:mt-12 xl:ml-10">
+        <div className="relative z-10 flex flex-col items-center text-white text-center mt-36 lg:mt-12 xl:ml-10">
         <Image
             src="/Images/Home/HomeHero1.png"
             alt="bg"

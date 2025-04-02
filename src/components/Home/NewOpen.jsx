@@ -14,7 +14,7 @@ function NewOpen() {
             />
             
             <div className="relative z-10 mt-6">
-                <h1 className="text-2xl lg:text-[52px] font-bold drop-shadow-lg text-[#D42D21] w-full lg:w-[413px]">
+                <h1 className="text-2xl lg:text-[52px] font-bold  text-[#D42D21] w-full lg:w-[413px]">
                 Now Open For 
                 Franchise In 
                 These States!
@@ -49,16 +49,18 @@ function NewOpen() {
 
 
 
-        {/* Third image: Full-screen width and height */}
-        <div className="relative w-full h-screen mt-12">
+        <div className="relative w-full h-[200px] -mb-20 lg:-mb-0  sm:h-[500px] md:h-[600px] lg:h-screen lg:mt-12">
             <Image 
                 src="/Images/Home/lastSectionImg.png" 
                 alt="last section image" 
                 layout="fill" 
-                objectFit="cover" 
+                objectFit="contain"  // Show full image without cropping
+                priority
                 className="absolute top-0 left-0 w-full h-full"
             />
         </div>
+
+
     </div>
   )
 }
