@@ -18,7 +18,7 @@ const footerLinksDishes = [
 ];
 
 const Footer = () => (
-  <footer className="text-white mt-28 w-full py-10">
+  <footer className="text-white mt-28 w-full py-10 bg-[#222222]">
     <div className=" mx-auto px-4 lg:px-32 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
       <div className="flex flex-col ">
           <h2 className="text-2xl font-bold mb-3">
@@ -38,7 +38,7 @@ const Footer = () => (
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
       
-        <div className="py-4 px-4 ">
+        <div className="py-4 ">
           <h1 className="text-md font-semibold mb-3">NAVIGATION</h1>
           <ul className="flex flex-col gap-3">
             {footerLinks.map(({ title, link }) => (
@@ -49,7 +49,7 @@ const Footer = () => (
           </ul>
         </div>
 
-        <div className="py-4 px-4 ">
+        <div className="py-4  ">
           <h1 className="text-md font-semibold mb-3">DISHES</h1>
           <ul className="flex flex-col gap-3">
             {footerLinksDishes.map(({ title, link }) => (
@@ -61,7 +61,7 @@ const Footer = () => (
         </div>
 
 
-        <div className="py-4 px-4 ">
+        <div className="py-4  ">
           <h1 className="text-md font-semibold mb-3">FOLLOW US</h1>
           <div className="flex flex-row gap-3">
             {[FaTwitter, FaFacebookF, FaGooglePlusG, FaPinterestP].map((Icon, index) => (

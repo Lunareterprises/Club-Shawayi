@@ -1,0 +1,54 @@
+[
+    {
+      "id": 1,
+      "image": "/Images/Outlets/openshortlycarouselimg1.png",
+      "subHead": "Starts on 07th July 2025",
+      "mainHead": "Calicut, Kerala",
+      "description": "Experience authentic flavors with our delicious menu, crafted to bring you the best of local and international cuisine.",
+      "rating": 4.5,
+      "phone": "+91 98765 43210",
+      "contactLink": "/contact"
+    },
+    {
+      "id": 2,
+      "image": "/Images/Outlets/openshortlycarouselimg2.png",
+      "subHead": "Starts on 12th June 2025",
+      "mainHead": "Pune, Maharashtra",
+      "description": "Indulge in a world-class dining experience with freshly prepared gourmet dishes and a cozy ambiance.",
+      "rating": 4.7,
+      "phone": "+91 98765 43211",
+      "contactLink": "/contact"
+    },
+    {
+      "id": 3,
+      "image": "/Images/Outlets/openshortlycarouselimg1.png",
+      "subHead": "Starts on 07th July 2025",
+      "mainHead": "Calicut, Kerala",
+      "description": "Enjoy a perfect blend of traditional and modern cuisine, served in a warm and inviting atmosphere.",
+      "rating": 4.6,
+      "phone": "+91 98765 43212",
+      "contactLink": "/contact"
+    },
+    {
+      "id": 4,
+      "image": "/Images/Outlets/openshortlycarouselimg2.png",
+      "subHead": "Starts on 12th June 2025",
+      "mainHead": "Pune, Maharashtra",
+      "description": "Savor our chef's special delicacies, made from the freshest ingredients and served with love.",
+      "rating": 4.8,
+      "phone": "+91 98765 43213",
+      "contactLink": "/contact"
+    }
+    ,
+    {
+      "id": 5,
+      "image": "/Images/Outlets/openshortlycarouselimg1.png",
+      "subHead": "Starts on 07th July 2025",
+      "mainHead": "Calicut, Kerala",
+      "description": "Enjoy a perfect blend of traditional and modern cuisine, served in a warm and inviting atmosphere.",
+      "rating": 4.6,
+      "phone": "+91 98765 43212",
+      "contactLink": "/contact"
+    }
+    
+]

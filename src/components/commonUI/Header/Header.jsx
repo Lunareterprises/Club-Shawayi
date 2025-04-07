@@ -2,12 +2,12 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaEnvelope, FaPhoneSquare, FaTwitter, FaFacebook,FaInstagram, FaYoutube } from "react-icons/fa";
 
 const MENU_ITEMS = [
   { id: 1, name: "Home", link: "/" },
-  { id: 2, name: "About Us", link: "/" },
-  { id: 3, name: "Menu", link: "/" },
+  { id: 2, name: "About Us", link:"/"  },
+  { id: 3, name: "Our Outlets", link: "/Outlets" },
   { id: 4, name: "Contact Us", link: "/" },
 ];
 
@@ -15,19 +15,40 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  const isFranchisePage = pathname === "/Franchise";
+  const handleScroll = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  
+  
 
   return (
-    <header
-      className={`z-40 relative transition-all duration-300 ${
-        isFranchisePage ? "bg-[#000000]" : "bg-white"
-      }`}
+    <header 
+    className="absolute top-0 left-0 w-full z-10"
+      // className={`z-40 relative transition-all duration-300 ${
+      //   isFranchisePage ? "bg-transparent" : "bg-transparent"
+      // }`}
     >
-      <div className={`${isFranchisePage ? "bg-transparent" : "bg-[#D42D21]"} px-10 lg:px-32  py-5`}>
-        <div className="container flex justify-between items-center gap-10 sm:gap-3">
-          <a href="#" className="font-bold text-2xl sm:text-3xl text-gray-600">
+      <div className=" bg-transparent px-10 lg:px-32  py-5 text-white" >
+        <div className="flex flex-col-reverse md:flex-row justify-center md:justify-between gap-3 mb-6 ">
+          <div className="flex flex-col md:flex-row gap-3 text-sm">
+            <p className=" flex   items-center gap-2"><FaPhoneSquare />+1 0000000000  </p>
+            <p className=" flex  items-center gap-2"><FaEnvelope />cclubshawayi.1221@.com </p>
+          </div>
+          <div className="flex gap-12 items-center text-xl">
+            <FaFacebook /> 
+            <FaTwitter />
+            <FaInstagram />
+            <FaYoutube />
+          </div>
+        </div>
+
+        <div className="container flex justify-end items-center gap-10 sm:gap-3 ">
+          {/* <a href="#" className="font-bold text-2xl sm:text-3xl text-gray-600">
             <Image src="/Images/Home/logo.png" alt="Logo" width={223.51} height={45} />
-          </a>
+          </a> */}
 
           <button
             className="text-white text-2xl sm:hidden"
@@ -39,13 +60,17 @@ const Header = () => {
           <nav className="hidden sm:flex">
             <ul className="flex items-center md:gap-8 lg:gap-16 xl:gap-28">
               {MENU_ITEMS.map((item) => (
-                <li key={item.id}>
-                  <a href={item.link} className="text-white hover:font-semibold transition">
+                <li
+                  key={item.id}
+                  className={item.name === "Contact Us" ? "bg-[#d42d21] text-black px-4 py-2 rounded-md hover:text-white  hover:bg-[#8e130a] transition" : ""}
+                >
+                  <a href={item.link} className="text-white hover:text-[#c7c4c4] transition">
                     {item.name}
                   </a>
                 </li>
               ))}
             </ul>
+
           </nav>
         </div>
       </div>
