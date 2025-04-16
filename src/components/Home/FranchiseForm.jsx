@@ -1,19 +1,21 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import { useRouter } from "next/navigation";
 
 const FranchiseForm = () => {
+  const [successMessage, setSuccessMessage] = useState("");
   const initialValues = {
     name: "",
     email: "",
     phone: "",
     location: "",
     reason: "",
-    notRobot: false,
     terms: false,
   };
+  const router = useRouter();
 
   const validationSchema = Yup.object().shape({
     name: Yup.string().required("Name is required"),
@@ -23,23 +25,38 @@ const FranchiseForm = () => {
       .required("Phone number is required"),
     location: Yup.string().required("Preferred location is required"),
     reason: Yup.string().required("Please specify why you want the franchise"),
-    notRobot: Yup.boolean().oneOf([true], "Please verify you're not a robot"),
     terms: Yup.boolean().oneOf([true], "You must agree to the terms"),
   });
 
   const handleSubmit = (values, { resetForm }) => {
     console.log("Form submitted:", values);
-    alert("Form submitted successfully!");
+    setSuccessMessage("Form submitted successfully!");
     resetForm();
+
+    setTimeout(() => {
+      setSuccessMessage("");
+      router.push("/Franchise"); 
+    }, 3000); 
   };
 
   return (
     <div className="flex justify-center items-center min-h-screen text-[#1F1F1F] w-full lg:w-3xl mb-10 lg:mb-0">
       <div className="bg-white/80 p-6 rounded-lg shadow-md w-full max-w-lg">
         <h2 className="text-2xl font-semibold mb-4">Get Franchise</h2>
-        <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
+
+        {successMessage && (
+          <div className="mb-4 text-green-600 font-semibold text-sm  p-2 rounded">
+            {successMessage}
+          </div>
+        )}
+
+        <Formik
+          initialValues={initialValues}
+          validationSchema={validationSchema}
+          onSubmit={handleSubmit}
+        >
           {({ isSubmitting }) => (
-            <Form className="space-y-4 text-sm ">
+            <Form className="space-y-4 text-sm">
               <div>
                 <label className="block mb-1 text-[14px]">Name</label>
                 <Field type="text" name="name" className="w-full p-2 border rounded" />
@@ -65,17 +82,19 @@ const FranchiseForm = () => {
               </div>
 
               <div>
-                <label className="block mb-1 ">Why C Club Shawayi Franchise?</label>
+                <label className="block mb-1">Why C Club Shawayi Franchise?</label>
                 <Field as="textarea" name="reason" className="w-full p-2 border rounded" />
                 <ErrorMessage name="reason" component="div" className="text-red-500 text-[12px]" />
               </div>
 
-              
-
               <div className="flex items-start">
                 <Field type="checkbox" name="terms" className="mr-2 mt-1" />
                 <label>
-                <p className="font-semibold">Terms & Condition</p> <p className="text-[13px]">By submitting this form, you agree to our terms and acknowledge that we may contact you via phone at the number you provide.</p>
+                  <p className="font-semibold">Terms & Condition</p>
+                  <p className="text-[13px]">
+                    By submitting this form, you agree to our terms and acknowledge that we may contact
+                    you via phone at the number you provide.
+                  </p>
                 </label>
               </div>
               <ErrorMessage name="terms" component="div" className="text-red-500 text-[12px]" />

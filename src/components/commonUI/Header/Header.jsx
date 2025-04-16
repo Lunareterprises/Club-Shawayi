@@ -27,9 +27,7 @@ const Header = () => {
   return (
     <header 
     className="absolute top-0 left-0 w-full z-10"
-      // className={`z-40 relative transition-all duration-300 ${
-      //   isFranchisePage ? "bg-transparent" : "bg-transparent"
-      // }`}
+     
     >
       <div className=" bg-transparent px-10 lg:px-32  py-5 text-white" >
         <div className="flex flex-col-reverse md:flex-row justify-center md:justify-between gap-3 mb-6 ">
@@ -45,7 +43,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="container flex justify-end items-center gap-10 sm:gap-3 ">
+        <div className=" flex justify-end items-center gap-10 sm:gap-3 ">
           {/* <a href="#" className="font-bold text-2xl sm:text-3xl text-gray-600">
             <Image src="/Images/Home/logo.png" alt="Logo" width={223.51} height={45} />
           </a> */}

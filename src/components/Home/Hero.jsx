@@ -12,7 +12,7 @@ function Hero({ overrideHeader }) {
         style={{
           backgroundImage: "url('/images/Home/HomeHero2.png')",
         }}
-      >
+        >
 
         <div className="absolute inset-0 bg-black opacity-60 z-0" />
 
@@ -30,7 +30,7 @@ function Hero({ overrideHeader }) {
           <p className="text-2xl lg:text-3xl xl:text-5xl font-[600] whitespace-nowrap">OUR UNIQUE</p>
           <p className="text-xl lg:text-2xl xl:text-4xl font-[600] whitespace-nowrap">BLEND OF SPICES</p>
         </div>
-        <div className="mt-12 relative z-10 ">
+        <div className="mt-20 relative z-10 ">
           <FranchiseForm />
         </div>
       </div>

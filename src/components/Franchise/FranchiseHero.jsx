@@ -1,23 +1,29 @@
 import React from "react";
 import { Montez } from "next/font/google"; 
 import Image from "next/image";
+import Header from "../commonUI/Header/Header";
+
 
 const montez = Montez({
   subsets: ["latin"],
   weight: "400",
 });
 
-function FranchiseHero() {
+function FranchiseHero({overrideHeader}) {
   return (
-    <div className="flex flex-col justify-center items-center mt-10 lg:mt-0 h-auto lg:h-screen">
-      <h1 className="font-bold text-3xl md:text-5px lg:text-7xl text-center leading-normal lg:leading-22">
+    <div>
+      {overrideHeader ? <Header /> : <Header />}
+    
+    <div className="flex flex-col justify-center items-center  lg:mt-0 h-auto lg:h-screen bg-black  ">
+      
+      <h1 className="font-bold text-white text-3xl md:text-5px lg:text-7xl text-center leading-normal lg:leading-22 mt-40 lg:mt-20">
         Join the <span className="text-[#D42D21]">Masala <br /> Shawayi</span> Revolution..!
       </h1>
       <div className="flex text-sm lg:text-xl flex-col items-center gap-2 mt-3">
-        <p className=" text-center">Mon-Sun: 11 AM-11 PM</p>
-        <p className=" text-center">Bangalore, India</p>
+        <p className=" text-center text-white">Mon-Sun: 11 AM-11 PM</p>
+        <p className=" text-center  text-white">Bangalore, India</p>
       </div>
-      <p className={`text-2xl lg:text-5xl text-center mt-10 lg:mt-18 ${montez.className}`}>
+      <p className={` text-white text-2xl lg:text-5xl text-center mt-10 lg:mt-18 ${montez.className}`}>
         The C Club Shawayi <span className="text-[#D42D21]">Franchise</span> Opportunity
       </p>
       <div className="mt-12 border-2 border-[#D42D21] rounded-full p-4 animate-blink-move-circle">
@@ -29,6 +35,7 @@ function FranchiseHero() {
           height={100}
         />
       </div>
+    </div>
     </div>
   );
 }
